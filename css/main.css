@@ -41,3 +41,53 @@ menu{
 .menu-derecha{
     align-self: flex-end;
 }
+
+.main-accordion-container{
+    background-color: purple;
+    width: 100%;
+}
+
+.accordion-item{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    border-top: 1px black solid;
+}
+
+.accordion-item:hover{
+    transform: scale(1.05);
+    border: 1px solid black;
+}
+
+.accordion-title{
+    height: 50px;
+    font-size: 20px;
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.accordion-desc{
+    display: none;
+}
+
+.accordion-title .tab-active{
+    font-size: 30px;
+    pointer-events: visible;
+}
+
+.tab-active .accordion-desc{
+    background-color: azure;
+    display: flex;
+    flex-direction: center;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    padding: 10px 0;
+
+}
